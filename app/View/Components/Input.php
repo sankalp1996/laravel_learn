@@ -3,26 +3,31 @@
 namespace App\View\Components;
 
 use Closure;
-use Illuminate\View\Component;
 use Illuminate\Contracts\View\View;
+use Illuminate\View\Component;
 
 class Input extends Component
 {
     public $name;
+
     public $type;
+
     public $id;
+
     public $label;
+
     public $value;
+
     /**
      * Create a new component instance.
      */
-    public function __construct($name,$type,$id,$label,$value='')
+    public function __construct($name, $type, $id, $label, $value = '')
     {
-        $this->name=$name;
-        $this->type=$type;
-        $this->id=$id;
-        $this->label=$label;
-        $this->value=$value;
+        $this->name = $name;
+        $this->type = $type;
+        $this->id = $id;
+        $this->label = $label;
+        $this->value = $value;
     }
 
     /**

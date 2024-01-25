@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::table('accounts', function (Blueprint $table) {
             // $table->string('test_id',50)->default('.')->after('acc_name');
-            
+
         });
     }
 
